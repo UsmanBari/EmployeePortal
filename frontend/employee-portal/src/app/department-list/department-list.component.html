@@ -1,0 +1,32 @@
+<section class="page-card">
+  <div class="page-header">
+    <div>
+      <p class="section-kicker">Organization</p>
+      <h2>Departments</h2>
+    </div>
+    <p class="section-note">Placeholder department directory</p>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Department</th>
+          <th>Manager</th>
+          <th>Headcount</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (department of departments; track department.name) {
+          <tr>
+            <td>{{ department.name }}</td>
+            <td>{{ department.manager }}</td>
+            <td>{{ department.headcount }}</td>
+            <td>{{ department.location }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</section>

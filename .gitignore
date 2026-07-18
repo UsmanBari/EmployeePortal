@@ -1,20 +1,44 @@
-# Angular / Node
-**/node_modules/
-**/dist/
-**/.angular/cache/
-**/coverage/
-**/npm-debug.log
-**/yarn-error.log
-
-# .NET
+# Visual Studio / .NET
 **/bin/
 **/obj/
 **/.vs/
 **/*.user
 **/*.suo
+**/*.userosscache
+**/*.sln.docstates
+**/TestResults/
 
-# IDE and OS files
+# Angular / Node.js
+**/node_modules/
+**/.angular/
+**/dist/
+**/coverage/
+**/tmp/
+**/out-tsc/
+**/bazel-out/
+**/npm-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+**/.cache/
+**/.sass-cache/
+**/connect.lock
+**/libpeerconnection.log
+**/testem.log
+**/__screenshots__/
+
+# IDEs and editors
+**/.idea/
+**/.project/
+**/.classpath/
+**/.c9/
+**/*.launch
+**/.settings/
+**/*.sublime-workspace
+**/.history/
+
+# Visual Studio Code
 .vscode/
-.idea/
-Thumbs.db
-.DS_Store
+
+# System files
+**/.DS_Store
+**/Thumbs.db

@@ -1,39 +1,143 @@
 # Employee Portal
 
-Employee Portal is a full-stack workspace with three parts:
+A full-stack Employee Management System developed during my Full Stack Internship.
 
-- `frontend/employee-portal` - Angular client application.
-- `backend/EmployeePortal.Api` - ASP.NET Core Web API.
-- `database/EmployeePortal.sql` - SQL Server schema and seed data.
+## Project Description
 
-## Current Status
+Employee Portal combines an ASP.NET Core Web API, an Angular standalone frontend, and a SQL Server database. The current version reflects the first two weeks of the internship project: database setup, backend connectivity with Entity Framework Core, and a responsive Angular dashboard using placeholder data.
 
-This is the initial project scaffold. The main pieces are in place, but the app is still at the starter stage.
+The Angular UI currently uses mock data for the employee and department views. It will be connected to the backend APIs in the next development phase.
 
-- The frontend is created with Angular 21 and uses the standalone application setup.
-- The backend is created with ASP.NET Core Web API, controllers, and Swagger/OpenAPI in development.
-- The database script creates the initial employee and department tables with sample data.
-
-## What Has Been Done So Far
-
-- Created the Angular frontend project.
-- Created the ASP.NET Core backend project.
-- Added the SQL script for the `EmployeePortal` database.
-- Published the project to GitHub as a single root repository.
-
-## How To Run
+## Tech Stack
 
 ### Frontend
 
-```bash
-cd frontend/employee-portal
-npm install
-npm start
-```
-
-The app runs at `http://localhost:4200/`.
+- Angular (Standalone Components)
+- TypeScript
+- Angular Router
 
 ### Backend
+
+- ASP.NET Core Web API
+- Entity Framework Core
+
+### Database
+
+- Microsoft SQL Server
+
+## Folder Structure
+
+```text
+EmployeePortal/
+│
+├── backend/
+│   └── EmployeePortal.Api/
+├── frontend/
+│   └── employee-portal/
+├── database/
+│   └── EmployeePortal.sql
+└── README.md
+```
+
+## Features Completed
+
+### Week 1
+
+- Initial project setup
+- SQL Server database creation
+- Departments table
+- Employees table
+- ASP.NET Core Web API setup
+- Angular project setup
+- SQL Server Management Studio configuration
+- Swagger integration
+- Database connectivity
+
+### Week 2
+
+#### Database
+
+- Inserted sample departments
+- Inserted sample employees
+- Practiced SQL INNER JOIN queries
+
+#### Backend
+
+- Installed Entity Framework Core
+- Configured SQL Server connection
+- Created `EmployeeDbContext`
+- Created `Employee` model
+- Created `Department` model
+- Registered `DbContext` using dependency injection
+- Successfully connected ASP.NET Core with SQL Server
+
+#### Frontend
+
+- Configured Angular routing
+- Employee List page
+- Employee Form page
+- Department List page
+- Navigation menu
+- Router outlet configuration
+- Default routing
+- Responsive dashboard layout
+
+## Current Project Status
+
+### Completed
+
+- SQL Server database
+- Entity Framework Core integration
+- ASP.NET Core backend
+- Angular frontend
+- Navigation
+- Routing
+- Dashboard layout
+
+### In Progress
+
+- REST API CRUD endpoints
+- Angular `HttpClient` integration
+- Frontend and backend communication
+
+## Architecture
+
+```text
+Angular Frontend
+	│
+	│ (Coming Next)
+	▼
+ASP.NET Core Web API
+	│
+	▼
+Entity Framework Core
+	│
+	▼
+SQL Server
+```
+
+## Installation
+
+### Prerequisites
+
+- .NET 10 SDK
+- Node.js 20+ and npm
+- SQL Server or SQL Server Express
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/UsmanBari/EmployeePortal.git
+cd EmployeePortal
+```
+
+### Restore the Database
+
+Run `database/EmployeePortal.sql` in SQL Server Management Studio or your preferred SQL client to create the database and seed the initial data.
+
+## How to Run the Backend
+
+The backend connection string is defined in `backend/EmployeePortal.Api/appsettings.json`.
 
 ```bash
 cd backend/EmployeePortal.Api
@@ -41,13 +145,40 @@ dotnet restore
 dotnet run
 ```
 
-### Database
+The API starts with Swagger enabled in development.
 
-Run `database/EmployeePortal.sql` against SQL Server or SQL Server Express to create the database and seed data.
+## How to Run the Frontend
 
-## Next Steps
+```bash
+cd frontend/employee-portal
+npm install
+npm start
+```
 
-- Replace the Angular starter screen with the actual employee portal UI.
-- Add employee and department CRUD endpoints to the API.
-- Connect the frontend to the backend.
-- Expand the database schema as the application grows.
+Open `http://localhost:4200/` in your browser.
+
+## Technologies Used
+
+- Angular 21
+- TypeScript
+- ASP.NET Core Web API
+- Entity Framework Core
+- SQL Server
+- Swagger / OpenAPI
+
+## Screenshots
+
+Add screenshots here as the UI evolves.
+
+- Dashboard screenshot placeholder
+- Employee list screenshot placeholder
+- Employee form screenshot placeholder
+- Department list screenshot placeholder
+
+## Future Improvements
+
+- Build REST API CRUD endpoints for employees and departments
+- Replace mock data with live API data
+- Add form validation and better user feedback
+- Expand the database schema as the application grows
+- Improve authentication and authorization

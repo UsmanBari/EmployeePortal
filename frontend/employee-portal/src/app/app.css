@@ -1,0 +1,112 @@
+:host {
+	display: block;
+	min-height: 100vh;
+	background:
+		radial-gradient(circle at top left, rgba(15, 118, 110, 0.16), transparent 30%),
+		linear-gradient(180deg, #f5f7fb 0%, #eef2ff 100%);
+	color: #102033;
+}
+
+.dashboard-shell {
+	min-height: 100vh;
+	padding: 1.25rem;
+}
+
+.topbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 1rem 1.25rem;
+	border: 1px solid rgba(15, 23, 42, 0.08);
+	border-radius: 1.25rem;
+	background: rgba(255, 255, 255, 0.82);
+	backdrop-filter: blur(16px);
+	box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+
+.brand {
+	display: flex;
+	align-items: center;
+	gap: 0.9rem;
+	min-width: 0;
+}
+
+.brand-mark {
+	display: grid;
+	place-items: center;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 0.9rem;
+	background: linear-gradient(135deg, #0f766e, #2563eb);
+	color: #fff;
+	font-weight: 800;
+	letter-spacing: 0.04em;
+}
+
+.eyebrow {
+	margin: 0;
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: #667085;
+}
+
+.brand h1 {
+	margin: 0.1rem 0 0;
+	font-size: 1.15rem;
+	line-height: 1.2;
+}
+
+.nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	justify-content: flex-end;
+}
+
+.nav a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 2.75rem;
+	padding: 0.75rem 1rem;
+	border-radius: 999px;
+	text-decoration: none;
+	color: #274060;
+	font-weight: 600;
+	background: rgba(148, 163, 184, 0.12);
+	transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease;
+}
+
+.nav a:hover {
+	transform: translateY(-1px);
+	background: rgba(37, 99, 235, 0.14);
+	color: #0f172a;
+}
+
+.nav a.active {
+	background: linear-gradient(135deg, #0f766e, #2563eb);
+	color: #fff;
+	box-shadow: 0 10px 24px rgba(37, 99, 235, 0.24);
+}
+
+.content {
+	padding: 1.25rem 0 0;
+}
+
+@media (max-width: 720px) {
+	.topbar {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.nav {
+		justify-content: stretch;
+	}
+
+	.nav a {
+		flex: 1 1 100%;
+	}
+}

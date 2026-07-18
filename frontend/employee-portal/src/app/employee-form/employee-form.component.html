@@ -1,2 +1,44 @@
-<h2>Employee Form</h2>
-<p>employee-form works!</p>
+<section class="page-card">
+	<div class="page-header">
+		<div>
+			<p class="section-kicker">Management</p>
+			<h2>Employee Form</h2>
+		</div>
+		<p class="section-note">Mock form for creating or updating an employee</p>
+	</div>
+
+	<form class="form-grid">
+		<label>
+			<span>Full Name</span>
+			<input type="text" placeholder="Enter employee name" />
+		</label>
+
+		<label>
+			<span>Job Title</span>
+			<input type="text" placeholder="Enter job title" />
+		</label>
+
+		<label>
+			<span>Department</span>
+			<select>
+				<option>Human Resources</option>
+				<option>Engineering</option>
+				<option>Finance</option>
+			</select>
+		</label>
+
+		<label>
+			<span>Status</span>
+			<select>
+				<option>Active</option>
+				<option>On Leave</option>
+				<option>Inactive</option>
+			</select>
+		</label>
+
+		<div class="actions">
+			<button type="button" class="secondary">Reset</button>
+			<button type="button" class="primary">Save Employee</button>
+		</div>
+	</form>
+</section>
